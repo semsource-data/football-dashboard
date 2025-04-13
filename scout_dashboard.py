@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("attacking_fullbacks.csv")
 
-
 # STEP 3: Filter full-backs
 fullback_keywords = ["RB", "RWB", "LB", "LWB"]
 df_fullbacks = df[df["Position"].astype(str).str.contains('|'.join(fullback_keywords))].copy()
