@@ -8,9 +8,8 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 
-# STEP 2: Load data
-file_path = "FB_ATT.xlsx"  # Make sure this file is in your Colab/working dir
-df = pd.read_excel(file_path)
+df = pd.read_csv("attacking_fullbacks.csv")
+
 
 # STEP 3: Filter full-backs
 fullback_keywords = ["RB", "RWB", "LB", "LWB"]
